@@ -9,3 +9,8 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1.21", features = ["full", "tracing"] }
+
+[profile.dev]
+rustflags = [
+    "--cfg", "tokio_unstable"
+]
