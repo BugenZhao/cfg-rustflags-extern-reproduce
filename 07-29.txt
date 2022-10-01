@@ -1,0 +1,884 @@
+   Compiling libc v0.2.134
+   Compiling autocfg v1.1.0
+   Compiling proc-macro2 v1.0.46
+   Compiling quote v1.0.21
+    Checking cfg-if v1.0.0
+   Compiling unicode-ident v1.0.4
+   Compiling syn v1.0.101
+   Compiling log v0.4.17
+   Compiling parking_lot_core v0.9.3
+    Checking scopeguard v1.1.0
+     Running `rustc --crate-name build_script_build /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.134/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=f2cb10e8f2071624 -C extra-filename=-f2cb10e8f2071624 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/libc-f2cb10e8f2071624 -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name autocfg /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/autocfg-1.1.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=acf1cd5f65128422 -C extra-filename=-acf1cd5f65128422 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.46/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' -C metadata=c0c7959dd4dd36c1 -C extra-filename=-c0c7959dd4dd36c1 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/proc-macro2-c0c7959dd4dd36c1 -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.21/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' -C metadata=874f4a74e4a8127b -C extra-filename=-874f4a74e4a8127b --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/quote-874f4a74e4a8127b -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name cfg_if --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/cfg-if-1.0.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=3d8d0b265f4a3336 -C extra-filename=-3d8d0b265f4a3336 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name unicode_ident --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/unicode-ident-1.0.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=e4c3093778eadcfe -C extra-filename=-e4c3093778eadcfe --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/syn-1.0.101/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="full"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --cfg 'feature="quote"' -C metadata=449e1109f97a4658 -C extra-filename=-449e1109f97a4658 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/syn-449e1109f97a4658 -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.17/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=7cb292f10f6051ba -C extra-filename=-7cb292f10f6051ba --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/log-7cb292f10f6051ba -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.9.3/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=b5f0fe6f5a93251c -C extra-filename=-b5f0fe6f5a93251c --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/parking_lot_core-b5f0fe6f5a93251c -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name scopeguard /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/scopeguard-1.1.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=888004bb2bc7d4a3 -C extra-filename=-888004bb2bc7d4a3 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+    Checking smallvec v1.9.0
+     Running `rustc --crate-name smallvec --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/smallvec-1.9.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=c8be2cb4a061e59e -C extra-filename=-c8be2cb4a061e59e --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+   Compiling memchr v2.5.0
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.5.0/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=b21ac3adafb62c64 -C extra-filename=-b21ac3adafb62c64 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/memchr-b21ac3adafb62c64 -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+    Checking pin-project-lite v0.2.9
+     Running `rustc --crate-name pin_project_lite --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/pin-project-lite-0.2.9/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=14ae73ed5b57e642 -C extra-filename=-14ae73ed5b57e642 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+    Checking bytes v1.2.1
+     Running `rustc --crate-name bytes --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/bytes-1.2.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=e476e472901f8bb6 -C extra-filename=-e476e472901f8bb6 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/log-7cb292f10f6051ba/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/parking_lot_core-b5f0fe6f5a93251c/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/quote-874f4a74e4a8127b/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/libc-f2cb10e8f2071624/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/syn-449e1109f97a4658/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/proc-macro2-c0c7959dd4dd36c1/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/memchr-b21ac3adafb62c64/build-script-build`
+   Compiling lock_api v0.4.9
+   Compiling tokio v1.21.2
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=e616136ed562b95f -C extra-filename=-e616136ed562b95f --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/lock_api-e616136ed562b95f -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern autocfg=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libautocfg-acf1cd5f65128422.rlib --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name build_script_build --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="bytes"' --cfg 'feature="default"' --cfg 'feature="fs"' --cfg 'feature="full"' --cfg 'feature="io-std"' --cfg 'feature="io-util"' --cfg 'feature="libc"' --cfg 'feature="macros"' --cfg 'feature="memchr"' --cfg 'feature="mio"' --cfg 'feature="net"' --cfg 'feature="num_cpus"' --cfg 'feature="parking_lot"' --cfg 'feature="process"' --cfg 'feature="rt"' --cfg 'feature="rt-multi-thread"' --cfg 'feature="signal"' --cfg 'feature="signal-hook-registry"' --cfg 'feature="socket2"' --cfg 'feature="sync"' --cfg 'feature="time"' --cfg 'feature="tokio-macros"' --cfg 'feature="tracing"' -C metadata=7da3eec52fafcf5d -C extra-filename=-7da3eec52fafcf5d --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/tokio-7da3eec52fafcf5d -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern autocfg=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libautocfg-acf1cd5f65128422.rlib --cap-lints allow --cfg tokio_unstable`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/lock_api-e616136ed562b95f/build-script-build`
+     Running `/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/build/tokio-7da3eec52fafcf5d/build-script-build`
+     Running `rustc --crate-name log /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.17/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=f13115e658863af2 -C extra-filename=-f13115e658863af2 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern cfg_if=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libcfg_if-3d8d0b265f4a3336.rmeta --cap-lints allow --cfg tokio_unstable --cfg atomic_cas --cfg has_atomics`
+     Running `rustc --crate-name libc /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.134/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=c71580bed5537ea2 -C extra-filename=-c71580bed5537ea2 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable --cfg freebsd11 --cfg libc_priv_mod_use --cfg libc_union --cfg libc_const_size_of --cfg libc_align --cfg libc_int128 --cfg libc_core_cvoid --cfg libc_packedN --cfg libc_cfg_target_vendor --cfg libc_non_exhaustive --cfg libc_ptr_addr_of --cfg libc_underscore_const_names --cfg libc_const_extern_fn`
+    Checking signal-hook-registry v1.4.0
+    Checking socket2 v0.4.7
+    Checking mio v0.8.4
+    Checking num_cpus v1.13.1
+     Running `rustc --crate-name parking_lot_core --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.9.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=aadb5b521488e5d3 -C extra-filename=-aadb5b521488e5d3 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern cfg_if=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libcfg_if-3d8d0b265f4a3336.rmeta --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --extern smallvec=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsmallvec-c8be2cb4a061e59e.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name signal_hook_registry /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/signal-hook-registry-1.4.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=555a87336e925e4d -C extra-filename=-555a87336e925e4d --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name socket2 --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.7/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="all"' -C metadata=04e7c9085a2fde37 -C extra-filename=-04e7c9085a2fde37 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name num_cpus /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/num_cpus-1.13.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=5da97fbace565d8a -C extra-filename=-5da97fbace565d8a --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name mio --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-0.8.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="net"' --cfg 'feature="os-ext"' --cfg 'feature="os-poll"' -C metadata=21d83f0ab4fe238a -C extra-filename=-21d83f0ab4fe238a --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --extern log=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblog-f13115e658863af2.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name proc_macro2 --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.46/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' -C metadata=41019cf029a5f01b -C extra-filename=-41019cf029a5f01b --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern unicode_ident=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libunicode_ident-e4c3093778eadcfe.rmeta --cap-lints allow --cfg tokio_unstable --cfg use_proc_macro --cfg wrap_proc_macro --cfg proc_macro_span`
+     Running `rustc --crate-name quote --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.21/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' -C metadata=6b63bef1c1c827e3 -C extra-filename=-6b63bef1c1c827e3 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern proc_macro2=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libproc_macro2-41019cf029a5f01b.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name syn --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/syn-1.0.101/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="full"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --cfg 'feature="quote"' -C metadata=7c1b0a9379d7400b -C extra-filename=-7c1b0a9379d7400b --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern proc_macro2=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libproc_macro2-41019cf029a5f01b.rmeta --extern quote=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libquote-6b63bef1c1c827e3.rmeta --extern unicode_ident=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libunicode_ident-e4c3093778eadcfe.rmeta --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name memchr --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.5.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=06c41b1b8aa4d780 -C extra-filename=-06c41b1b8aa4d780 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name lock_api --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=c6a70420d8775fac -C extra-filename=-c6a70420d8775fac --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern scopeguard=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libscopeguard-888004bb2bc7d4a3.rmeta --cap-lints allow --cfg tokio_unstable --cfg has_const_fn_trait_bound`
+    Checking parking_lot v0.12.1
+     Running `rustc --crate-name parking_lot --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot-0.12.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="default"' -C metadata=43e3c04fe9d9cca1 -C extra-filename=-43e3c04fe9d9cca1 --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern lock_api=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblock_api-c6a70420d8775fac.rmeta --extern parking_lot_core=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libparking_lot_core-aadb5b521488e5d3.rmeta --cap-lints allow --cfg tokio_unstable`
+   Compiling tokio-macros v1.8.0
+     Running `rustc --crate-name tokio_macros --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-macros-1.8.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type proc-macro --emit=dep-info,link -C prefer-dynamic -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 -C metadata=08a7a614d0aa7f9d -C extra-filename=-08a7a614d0aa7f9d --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern proc_macro2=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libproc_macro2-41019cf029a5f01b.rlib --extern quote=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libquote-6b63bef1c1c827e3.rlib --extern syn=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsyn-7c1b0a9379d7400b.rlib --extern proc_macro --cap-lints allow --cfg tokio_unstable`
+     Running `rustc --crate-name tokio --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="bytes"' --cfg 'feature="default"' --cfg 'feature="fs"' --cfg 'feature="full"' --cfg 'feature="io-std"' --cfg 'feature="io-util"' --cfg 'feature="libc"' --cfg 'feature="macros"' --cfg 'feature="memchr"' --cfg 'feature="mio"' --cfg 'feature="net"' --cfg 'feature="num_cpus"' --cfg 'feature="parking_lot"' --cfg 'feature="process"' --cfg 'feature="rt"' --cfg 'feature="rt-multi-thread"' --cfg 'feature="signal"' --cfg 'feature="signal-hook-registry"' --cfg 'feature="socket2"' --cfg 'feature="sync"' --cfg 'feature="time"' --cfg 'feature="tokio-macros"' --cfg 'feature="tracing"' -C metadata=583c9666cba78dcc -C extra-filename=-583c9666cba78dcc --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern bytes=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libbytes-e476e472901f8bb6.rmeta --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --extern memchr=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libmemchr-06c41b1b8aa4d780.rmeta --extern mio=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libmio-21d83f0ab4fe238a.rmeta --extern num_cpus=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libnum_cpus-5da97fbace565d8a.rmeta --extern parking_lot=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libparking_lot-43e3c04fe9d9cca1.rmeta --extern pin_project_lite=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libpin_project_lite-14ae73ed5b57e642.rmeta --extern signal_hook_registry=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsignal_hook_registry-555a87336e925e4d.rmeta --extern socket2=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsocket2-04e7c9085a2fde37.rmeta --extern tokio_macros=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libtokio_macros-08a7a614d0aa7f9d.dylib --cap-lints allow --cfg tokio_unstable`
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+ --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:9:24
+  |
+9 |         pub(crate) use tracing::instrument::Instrumented;
+  |                        ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:14:17
+   |
+14 |             use tracing::instrument::Instrument;
+   |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0432]: unresolved import `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/handle.rs:417:17
+    |
+417 |             use tracing::Instrument;
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:34:42
+   |
+34 |                 let async_op_poll_span = tracing::trace_span!("runtime.resource.async_op.poll");
+   |                                          ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:32:37
+   |
+32 | ...   let async_op_span = tracing::trace_span!("runtime.resource.async_op", source = source, inherits_child_attrs = inherits_child_attrs);
+   |                           ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:16:24
+   |
+16 |             let span = tracing::trace_span!(
+   |                        ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/interval.rs:124:9
+    |
+124 |         tracing::trace_span!(
+    |         ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+    --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:1014:13
+     |
+1014 |             tracing::trace!(
+     |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:958:13
+    |
+958 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:906:13
+    |
+906 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:778:13
+    |
+778 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:710:13
+    |
+710 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:647:13
+    |
+647 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:587:13
+    |
+587 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:446:13
+    |
+446 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:286:33
+    |
+286 |             let resource_span = tracing::trace_span!(
+    |                                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:213:33
+    |
+213 |             let resource_span = tracing::trace_span!(
+    |                                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard_mapped.rs:190:13
+    |
+190 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard.rs:276:13
+    |
+276 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard.rs:216:13
+    |
+216 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard.rs:207:13
+    |
+207 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/read_guard.rs:171:13
+    |
+171 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard_mapped.rs:183:13
+    |
+183 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard.rs:271:13
+    |
+271 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard.rs:212:13
+    |
+212 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard.rs:203:13
+    |
+203 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_read_guard.rs:163:13
+    |
+163 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/semaphore.rs:133:13
+    |
+133 |             tracing::trace_span!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:583:17
+    |
+583 |                 tracing::trace_span!("runtime.resource.async_op", source = "Acquire::new");
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:434:13
+    |
+434 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:332:21
+    |
+332 |                     tracing::trace!(
+    |                     ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:158:17
+    |
+158 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:150:33
+    |
+150 |             let resource_span = tracing::trace_span!(
+    |                                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+    --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:1068:17
+     |
+1068 |                 tracing::trace!(
+     |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+    --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:1006:29
+     |
+1006 | ...                   tracing::trace!(
+     |                       ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:916:17
+    |
+916 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:841:17
+    |
+841 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:616:13
+    |
+616 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:532:35
+    |
+532 |         async_op_span.in_scope(|| tracing::trace_span!("runtime.resource.async_op.poll"));
+    |                                   ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:528:22
+    |
+528 |         .in_scope(|| tracing::trace_span!("runtime.resource.async_op", source = "Receiver::await"));
+    |                      ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:503:13
+    |
+503 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:495:13
+    |
+495 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:487:13
+    |
+487 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:479:13
+    |
+479 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:469:29
+    |
+469 |         let resource_span = tracing::trace_span!(
+    |                             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:263:13
+    |
+263 |             tracing::trace_span!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:76:33
+   |
+76 |             let resource_span = tracing::trace_span!(
+   |                                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/handle.rs:419:24
+    |
+419 |             let span = tracing::trace_span!(
+    |                        ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:270:33
+    |
+270 |             let resource_span = tracing::trace_span!(
+    |                                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:291:43
+    |
+291 |                 async_op_span.in_scope(|| tracing::trace_span!("runtime.resource.async_op.poll"));
+    |                                           ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/waker.rs:51:17
+   |
+51 |                 tracing::trace!(
+   |                 ^^^^^^^ use of undeclared crate or module `tracing`
+...
+78 |     trace!(harness, "waker.clone");
+   |     ------------------------------ in this macro invocation
+   |
+   = note: this error originates in the macro `trace` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/waker.rs:51:17
+   |
+51 |                 tracing::trace!(
+   |                 ^^^^^^^ use of undeclared crate or module `tracing`
+...
+90 |     trace!(harness, "waker.drop");
+   |     ----------------------------- in this macro invocation
+   |
+   = note: this error originates in the macro `trace` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/waker.rs:51:17
+    |
+51  |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+...
+101 |     trace!(harness, "waker.wake");
+    |     ----------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `trace` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/waker.rs:51:17
+    |
+51  |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+...
+113 |     trace!(harness, "waker.wake_by_ref");
+    |     ------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `trace` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:86:17
+   |
+86 |                 tracing::trace!(
+   |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:91:17
+   |
+91 |                 tracing::trace!(
+   |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:147:13
+    |
+147 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:153:13
+    |
+153 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:159:17
+    |
+159 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:275:13
+    |
+275 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:352:13
+    |
+352 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:466:13
+    |
+466 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:515:21
+    |
+515 |                     tracing::trace!(
+    |                     ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:584:21
+    |
+584 |                     tracing::trace!(
+    |                     ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:783:13
+    |
+783 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:852:13
+    |
+852 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+    --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+     |
+4    |             tracing::trace!(
+     |             ^^^^^^^ use of undeclared crate or module `tracing`
+     |
+    ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:1092:30
+     |
+1092 |             let res = ready!(trace_poll_op!("poll_recv", inner.poll_recv(cx)))?;
+     |                              ------------------------------------------------ in this macro invocation
+     |
+     = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:405:33
+    |
+405 | ...                   tracing::trace!(
+    |                       ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:410:33
+    |
+410 | ...                   tracing::trace!(
+    |                       ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:512:25
+    |
+512 |                         tracing::trace!(
+    |                         ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+    |
+4   |               tracing::trace!(
+    |               ^^^^^^^ use of undeclared crate or module `tracing`
+    |
+   ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:541:27
+    |
+541 |           let coop = ready!(trace_poll_op!(
+    |  ___________________________-
+542 | |             "poll_acquire",
+543 | |             crate::coop::poll_proceed(cx),
+544 | |         ));
+    | |_________- in this macro invocation
+    |
+    = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+    |
+4   |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+    |
+   ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:563:16
+    |
+563 |         return trace_poll_op!("poll_acquire", result);
+    |                -------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:585:17
+    |
+585 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:591:17
+    |
+591 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:597:17
+    |
+597 |                 tracing::trace_span!("runtime.resource.async_op.poll")
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:223:17
+    |
+223 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:228:17
+    |
+228 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:233:17
+    |
+233 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:296:17
+    |
+296 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:301:17
+    |
+301 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:306:17
+    |
+306 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:280:17
+    |
+280 |                 tracing::trace!(
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:287:17
+    |
+287 |                 tracing::trace_span!("runtime.resource.async_op", source = "Sleep::new_timeout")
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:370:17
+    |
+370 |                 tracing::trace_span!("runtime.resource.async_op", source = "Sleep::reset");
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:374:17
+    |
+374 |                 tracing::trace_span!("runtime.resource.async_op.poll");
+    |                 ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:382:13
+    |
+382 |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+    |
+4   |               tracing::trace!(
+    |               ^^^^^^^ use of undeclared crate or module `tracing`
+    |
+   ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:396:27
+    |
+396 |           let coop = ready!(trace_poll_op!(
+    |  ___________________________-
+397 | |             "poll_elapsed",
+398 | |             crate::coop::poll_proceed(cx),
+399 | |         ));
+    | |_________- in this macro invocation
+    |
+    = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+    |
+4   |             tracing::trace!(
+    |             ^^^^^^^ use of undeclared crate or module `tracing`
+    |
+   ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/driver/sleep.rs:410:16
+    |
+410 |         return trace_poll_op!("poll_elapsed", result);
+    |                -------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/macros/trace.rs:4:13
+   |
+4  |             tracing::trace!(
+   |             ^^^^^^^ use of undeclared crate or module `tracing`
+   |
+  ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:77:17
+   |
+77 |                 trace_poll_op!(poll_op_name, this.inner.poll(cx))
+   |                 ------------------------------------------------- in this macro invocation
+   |
+   = note: this error originates in the macro `trace_op` which comes from the expansion of the macro `trace_poll_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+ --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/future/trace.rs:4:28
+  |
+4 |     fn id(&self) -> Option<tracing::Id>;
+  |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+ --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/future/trace.rs:7:40
+  |
+7 | impl<F: Future> InstrumentedFuture for tracing::instrument::Instrumented<F> {
+  |                                        ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+ --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/future/trace.rs:8:28
+  |
+8 |     fn id(&self) -> Option<tracing::Id> {
+  |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/core.rs:84:27
+   |
+84 |     pub(super) id: Option<tracing::Id>,
+   |                           ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/task/harness.rs:291:40
+    |
+291 |     pub(super) fn id(&self) -> Option<&tracing::Id> {
+    |                                        ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/barrier.rs:47:20
+   |
+47 |     resource_span: tracing::Span,
+   |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:130:20
+    |
+130 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:147:20
+    |
+147 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:168:20
+    |
+168 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/mutex.rs:312:28
+    |
+312 |             resource_span: tracing::Span::none(),
+    |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:221:20
+    |
+221 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:321:20
+    |
+321 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:323:20
+    |
+323 |     async_op_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/oneshot.rs:325:25
+    |
+325 |     async_op_poll_span: tracing::Span,
+    |                         ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:41:20
+   |
+41 |     resource_span: tracing::Span,
+   |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/batch_semaphore.rs:197:28
+    |
+197 |             resource_span: tracing::Span::none(),
+    |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/semaphore.rs:83:20
+   |
+83 |     resource_span: tracing::Span,
+   |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/semaphore.rs:173:28
+    |
+173 |             resource_span: tracing::Span::none(),
+    |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_read_guard.rs:19:31
+   |
+19 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard.rs:20:31
+   |
+20 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/owned_write_guard_mapped.rs:19:31
+   |
+19 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/read_guard.rs:18:31
+   |
+18 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard.rs:20:31
+   |
+20 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock/write_guard_mapped.rs:18:31
+   |
+18 |     pub(super) resource_span: tracing::Span,
+   |                               ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:92:20
+   |
+92 |     resource_span: tracing::Span,
+   |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:350:28
+    |
+350 |             resource_span: tracing::Span::none(),
+    |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/sync/rwlock.rs:376:28
+    |
+376 |             resource_span: tracing::Span::none(),
+    |                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/time/interval.rs:403:20
+    |
+403 |     resource_span: tracing::Span,
+    |                    ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:29:62
+   |
+29 | ...   pub(crate) fn async_op<P,F>(inner: P, resource_span: tracing::Span, source: &str, poll_op_name: &'static str, inherits_child_attrs:...
+   |                                                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:52:39
+   |
+52 |             pub(crate) async_op_span: tracing::Span,
+   |                                       ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:53:44
+   |
+53 |             pub(crate) async_op_poll_span: tracing::Span,
+   |                                            ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `tracing`
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:54:39
+   |
+54 |             pub(crate) resource_span: tracing::Span,
+   |                                       ^^^^^^^ use of undeclared crate or module `tracing`
+
+error[E0599]: no method named `instrument` found for struct `BlockingTask` in the current scope
+   --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/handle.rs:428:17
+    |
+428 |             fut.instrument(span)
+    |                 ^^^^^^^^^^ method not found in `BlockingTask<F>`
+    |
+   ::: /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/runtime/blocking/task.rs:6:1
+    |
+6   | pub(crate) struct BlockingTask<T> {
+    | --------------------------------- method `instrument` not found for this struct
+
+error[E0599]: no method named `instrument` found for type parameter `F` in the current scope
+  --> /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/util/trace.rs:26:18
+   |
+13 |         pub(crate) fn task<F>(task: F, kind: &'static str, name: Option<&str>, id: u64) -> Instrumented<F> {
+   |                            - method `instrument` not found for this type parameter
+...
+26 |             task.instrument(span)
+   |                  ^^^^^^^^^^ method not found in `F`
+
+Some errors have detailed explanations: E0432, E0433, E0599.
+For more information about an error, try `rustc --explain E0432`.
+error: could not compile `tokio` due to 129 previous errors
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name tokio --edition=2018 /Users/bugenzhao/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-1.21.2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=2 --cfg 'feature="bytes"' --cfg 'feature="default"' --cfg 'feature="fs"' --cfg 'feature="full"' --cfg 'feature="io-std"' --cfg 'feature="io-util"' --cfg 'feature="libc"' --cfg 'feature="macros"' --cfg 'feature="memchr"' --cfg 'feature="mio"' --cfg 'feature="net"' --cfg 'feature="num_cpus"' --cfg 'feature="parking_lot"' --cfg 'feature="process"' --cfg 'feature="rt"' --cfg 'feature="rt-multi-thread"' --cfg 'feature="signal"' --cfg 'feature="signal-hook-registry"' --cfg 'feature="socket2"' --cfg 'feature="sync"' --cfg 'feature="time"' --cfg 'feature="tokio-macros"' --cfg 'feature="tracing"' -C metadata=583c9666cba78dcc -C extra-filename=-583c9666cba78dcc --out-dir /Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps -L dependency=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps --extern bytes=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libbytes-e476e472901f8bb6.rmeta --extern libc=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/liblibc-c71580bed5537ea2.rmeta --extern memchr=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libmemchr-06c41b1b8aa4d780.rmeta --extern mio=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libmio-21d83f0ab4fe238a.rmeta --extern num_cpus=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libnum_cpus-5da97fbace565d8a.rmeta --extern parking_lot=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libparking_lot-43e3c04fe9d9cca1.rmeta --extern pin_project_lite=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libpin_project_lite-14ae73ed5b57e642.rmeta --extern signal_hook_registry=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsignal_hook_registry-555a87336e925e4d.rmeta --extern socket2=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libsocket2-04e7c9085a2fde37.rmeta --extern tokio_macros=/Users/bugenzhao/Developer/Works/cfg-rustflags-extern-reproduce/target/debug/deps/libtokio_macros-08a7a614d0aa7f9d.dylib --cap-lints allow --cfg tokio_unstable` (exit status: 1)
